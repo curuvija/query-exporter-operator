@@ -1,0 +1,47 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: query-exporter-operator.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions: {}
+  description: Query Exporter exports prometheus metrics from different databases
+    (mysql, postgress...)
+  displayName: Query Exporter
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - query
+  - exporter
+  - database
+  - mysql
+  - postgress
+  links:
+  - name: Query Exporter Operator
+    url: https://query-exporter-operator.domain
+  maintainers:
+  - email: curuvija@live.com
+    name: Milos Curuvija
+  maturity: alpha
+  provider:
+    name: Milos Curuvija
+    url: github.com/curuvija
+  version: 0.0.0

@@ -1,0 +1,6 @@
+# Use the 'create api' subcommand to add watches to this file.
+- group: exporters.curuvija.com
+  version: v1alpha1
+  kind: QueryExporter
+  chart: helm-charts/query-exporter
+#+kubebuilder:scaffold:watch

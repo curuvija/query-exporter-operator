@@ -1,0 +1,4 @@
+## Append samples you want in your CSV to this file as resources ##
+resources:
+- exporters_v1alpha1_queryexporter.yaml
+#+kubebuilder:scaffold:manifestskustomizesamples

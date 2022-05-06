@@ -1,0 +1,20 @@
+# permissions for end users to view queryexporters.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: queryexporter-viewer-role
+rules:
+- apiGroups:
+  - exporters.curuvija.com
+  resources:
+  - queryexporters
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - exporters.curuvija.com
+  resources:
+  - queryexporters/status
+  verbs:
+  - get
