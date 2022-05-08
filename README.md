@@ -31,7 +31,13 @@ To run bundle with OLM:
 
 Wait for olm to get up and execute:
 
-``operator-sdk run bundle docker.io/curuvija/query-exporter-operator-bundle:v0.0.1``
+Create namespace:
+
+``kubectl create ns``
+
+Run operator:
+
+``operator-sdk run bundle docker.io/curuvija/query-exporter-operator-bundle:v0.0.1 --namespace query-exporter``
 
 ## Deploy QueryExporter
 

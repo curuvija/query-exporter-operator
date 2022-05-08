@@ -5,7 +5,7 @@ metadata:
     alm-examples: '[]'
     capabilities: Basic Install
   name: query-exporter-operator.v0.0.0
-  namespace: placeholder
+  namespace: query-exporter
 spec:
   apiservicedefinitions: {}
   customresourcedefinitions: {}
@@ -20,11 +20,11 @@ spec:
       deployments: null
     strategy: ""
   installModes:
-  - supported: false
+  - supported: true
     type: OwnNamespace
-  - supported: false
+  - supported: true
     type: SingleNamespace
-  - supported: false
+  - supported: true
     type: MultiNamespace
   - supported: true
     type: AllNamespaces
